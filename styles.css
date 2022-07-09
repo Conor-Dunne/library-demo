@@ -5,7 +5,47 @@
 }
 
 body {
-    background-image:url(./images/aleksei-ieshkin-A6obuTm7_z0-unsplash.jpg);
+    font-family: Lato,sans-serif;
+    height: 100vh;
+    background-color: white;
     background-size: cover;
     color: white;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.main {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding: 20px 15px;
+    background-color: rgb(174 174 174 / 30%);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    line-height: 1.2;
+    background-color:white;
+    color: black;
+    border-radius: 5px;
+    border-left: 5px solid rgb(12, 226, 40);
+}
+
+.header-main {
+    color: #0e101a;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-size: calc(var(--rem)*1px*0.875);
+    line-height: calc(var(--rem)*1px*1.5);
+}
+
+.header-img {
+    background-image:url(./images/aleksei-ieshkin-A6obuTm7_z0-unsplash.jpg);
+    background-size: contain;
+    width: 30%;
 }
