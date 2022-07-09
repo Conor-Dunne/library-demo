@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:url(./images/aleksei-ieshkin-A6obuTm7_z0-unsplash.jpg);
+    background-size: cover;
+    color: white;
+}
