@@ -21,7 +21,7 @@ p {
     height: 100%;
     margin: auto;
     padding: 20px 15px;
-    background-color: rgb(174 174 174 / 30%);
+    background-color: #f6f6f6;
 }
 
 header {
@@ -33,7 +33,7 @@ header {
     background-color:white;
     color: black;
     border-radius: 5px;
-    border-left: 5px solid rgb(12, 226, 40);
+    border-left: 5px solid rgb(23, 217, 169);
 }
 
 .header-main {
@@ -48,4 +48,5 @@ header {
     background-image:url(./images/aleksei-ieshkin-A6obuTm7_z0-unsplash.jpg);
     background-size: contain;
     width: 30%;
+    border-radius: 2px;
 }
