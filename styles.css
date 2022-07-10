@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 10px;
+}
+
 body {
     font-family: Lato,sans-serif;
     height: 100vh;
@@ -17,11 +21,12 @@ p {
 }
 
 .main {
-    width: 80%;
+    width: 60%;
     height: 100%;
     margin: auto;
     padding: 20px 15px;
     background-color: #f6f6f6;
+    box-shadow: 0px 0px 17px 4px #00000024;
 }
 
 header {
@@ -29,11 +34,16 @@ header {
     justify-content: space-between;
     gap: 10px;
     padding: 10px;
+    font-size: 1.5rem;
     line-height: 1.2;
     background-color:white;
     color: black;
     border-radius: 5px;
     border-left: 5px solid rgb(23, 217, 169);
+}
+
+header p {
+    color: rgb(126, 119, 119);
 }
 
 .header-main {
@@ -49,4 +59,25 @@ header {
     background-size: contain;
     width: 30%;
     border-radius: 2px;
+}
+
+.main-content {
+    padding-top: 30px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+   justify-content: space-around;
+   align-items: stretch;
+   justify-items: center;
+   gap: 15px;
+
+}
+
+.book {
+    padding: 8px 5px;
+    background-color: white;
+    color: #0e101a;
+    width: 150px;
+    height: 170px;
+    box-shadow: 0px 0px 17px 4px #00000024;
+
 }
