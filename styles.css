@@ -10,7 +10,7 @@ html {
 
 body {
     font-family: Lato,sans-serif;
-    height: 100vh;
+    min-height: 100vh;
     background-color: white;
     background-size: cover;
     color: white;
@@ -22,7 +22,6 @@ p {
 
 .main {
     width: 60%;
-    height: 100%;
     margin: auto;
     padding: 20px 15px;
     background-color: #f6f6f6;
@@ -62,7 +61,8 @@ header p {
 }
 
 .main-content {
-    padding-top: 30px;
+    min-height: 100%;
+   padding-top: 30px;
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
    justify-content: space-around;
@@ -72,7 +72,8 @@ header p {
 
 }
 
-.book {
+.book, 
+#add-book {
     padding: 8px 5px;
     background-color: white;
     color: #0e101a;
@@ -81,3 +82,6 @@ header p {
     box-shadow: 0px 0px 17px 4px #00000024;
 
 }
+
+
+
