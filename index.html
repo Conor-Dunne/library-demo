@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/d9f592773a.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="main">
         <header>
@@ -18,30 +20,24 @@
             </div>
             <div class="header-img"></div>
         </header>
+        <form class="add-book-form">
+            <label for="book-title">Title:</label>
+            <input type="text" id="book-title" name="title" required>
+            <label for="book-author">Author:</label>
+            <input type="text" id="book-author" name="author" required>
+            <label for="book-pages">No. of pages:</label>
+            <input type="tel" name="page" id="book-pages" required>
+            <button id="add-book-btn" method="get">Add book</button>
+        </form>
         <div class="main-content">
             <div id="add-book">
                 <i class="fa-solid fa-circle-plus fa-5x"></i>
-            </div>
-            <div class="book">
-                <h1>Lord of the Rings</h1>
-                <h2>J.R.R. Tolkien</h2>
-            </div>
-            <div class="book">
-                <h1>Lord of the Rings</h1>
-                <h2>J.R.R. Tolkien</h2>
-            </div>
-            <div class="book">
-                <h1>Lord of the Rings</h1>
-                <h2>J.R.R. Tolkien</h2>
-            </div>
-            <div class="book">
-                <h1>Lord of the Rings</h1>
-                <h2>J.R.R. Tolkien</h2>
             </div>
         </div>
     </div>
 </body>
 <script src="./script.js"></script>
+
 </html>
 
 <!-- Photo by <a href="https://unsplash.com/@alekssei199?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aleksei Ieshkin</a> on <a href="https://unsplash.com/s/photos/book-shelf?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
