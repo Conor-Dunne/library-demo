@@ -11,6 +11,41 @@ let bookArray = [
         title: "Book 2",
         author: "Conor Dunne",
         pages: 150,
+    },
+    {
+        title: "Book 3",
+        author: "Conor Dunne",
+        pages: 150,
+    },
+    {
+        title: "Book 4",
+        author: "Conor Dunne",
+        pages: 150,
+    },
+    {
+        title: "Book 5",
+        author: "Conor Dunne",
+        pages: 150,
+    },
+    {
+        title: "Book 6",
+        author: "Conor Dunne",
+        pages: 150,
+    },
+    {
+        title: "Book 7",
+        author: "Conor Dunne",
+        pages: 150,
+    },
+    {
+        title: "Book 8",
+        author: "Conor Dunne",
+        pages: 150,
+    },
+    {
+        title: "Book 9",
+        author: "Conor Dunne",
+        pages: 150,
     }
 ]
 

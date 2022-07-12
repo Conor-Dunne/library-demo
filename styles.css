@@ -1,3 +1,11 @@
+:root {
+    --accent-wine: rgb(150 10 10 / 58%);
+    --pale-green: rgb(42 112 21 / 74%);
+    --old-blue: rgba(43, 59, 151, 0.863);
+    --old-yellow: rgb(194 178 36 / 90%);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +22,7 @@ body {
     background-color: white;
     background-size: cover;
 }
+
 
 p {
     margin: 10px 0;
@@ -79,7 +88,50 @@ header p {
     width: 150px;
     height: 170px;
     box-shadow: 0px 0px 17px 4px #00000024;
+    border-radius: 3px;
+}
 
+.book {
+    font-size: 0.8rem;
+    line-height: 2;
+    padding: 20px 20px;
+    color: #cfd138;
+    background-image: url(./images/book-cover.png);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.book h2 {
+    font-weight: 200;
+}
+
+.book:nth-child(4n-1) {
+    background-color: var(--accent-wine);
+}
+
+.book:nth-child(4n) {
+    background-color: var(--pale-green);
+    color: #f0f32b;
+
+}
+
+.book:nth-child(4n+1) {
+    background-color: var(--old-blue);
+}
+
+.book:nth-child(4n+2) {
+    background-color: var(--old-yellow);
+    color: #20201e;
+
+}
+
+#add-book {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: rgb(232 75 75);
 }
 
 form {
@@ -92,5 +144,7 @@ input {
     display: block;
     font-size: 2rem;
 }
+
+
 
 
