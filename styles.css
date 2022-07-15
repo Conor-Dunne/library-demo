@@ -21,6 +21,7 @@ body {
     min-height: 100vh;
     background-color: white;
     background-size: cover;
+    min-width: 320px;
 }
 
 
@@ -95,7 +96,7 @@ header p {
     font-size: 0.8rem;
     line-height: 2;
     padding: 20px 20px;
-    color: #cfd138;
+    color: #30302c;
     background-image: url(./images/book-cover.png);
     background-size: cover;
     background-blend-mode: multiply;
@@ -105,7 +106,7 @@ header p {
     font-weight: 200;
 }
 
-.book:nth-child(4n-1) {
+/* .book:nth-child(4n-1) {
     background-color: var(--accent-wine);
 }
 
@@ -123,7 +124,7 @@ header p {
     background-color: var(--old-yellow);
     color: #20201e;
 
-}
+} */
 
 #add-book {
     display: flex;
@@ -132,6 +133,10 @@ header p {
     align-items: center;
     gap: 10px;
     color: rgb(232 75 75);
+}
+
+button {
+    margin: 10px 0;;
 }
 
 .delete-btn {
@@ -158,6 +163,22 @@ form {
 input {
     display: block;
     font-size: 2rem;
+    max-width: 100%;
+}
+
+input[type=radio] {
+    border: none;
+}
+
+.read-status-fieldset {
+    border: none;
+}
+
+.radio-label {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+    align-items: center;
 }
 
 

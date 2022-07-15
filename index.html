@@ -28,6 +28,15 @@
             <label for="book-pages">No. of pages:</label>
             <input type="tel" name="page" id="book-pages" required>
             <button id="add-book-btn" method="get">Add book</button>
+            <fieldset class="read-status-fieldset">
+                <legend>Have you read this book?</legend>
+                <label for="read" class="radio-label">
+                    <input type="radio" name="status" id="read" value="read" required>I have read this book
+                </label>
+                <label for="unread" class="radio-label">
+                    <input type="radio" name="status" id="unread" value="unread">I have not read this book
+                </label>
+            </fieldset>
         </form>
         <div class="main-content">
             <div id="add-book">
