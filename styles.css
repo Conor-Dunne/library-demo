@@ -102,6 +102,13 @@ header p {
     background-blend-mode: multiply;
 }
 
+.book-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
 .book h2 {
     font-weight: 200;
 }
@@ -139,19 +146,26 @@ button {
     margin: 10px 0;;
 }
 
-.delete-btn {
+.delete-btn,
+.status-btn {
     font-size: 1.5rem;
-    position: relative;
-    bottom: -39px;
-    left: 92px;
     color: var(--accent-wine);
-
 }
 
-.delete-btn:hover {
+
+.delete-btn:hover,
+.status-btn:hover {
     cursor: pointer;
     color: rgb(186 19 19);
+}
 
+
+
+.status-p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-wine);
+   
 }
 
 form {
