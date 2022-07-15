@@ -3,7 +3,7 @@ let bookArray = [
         title: "Book 0",
         author: "Conor Dunne",
         pages: 150,
-        id: 0,
+        id: 345,
         status: "read",
         changeReadStatus: function() {
             if (this.status === "read") {
@@ -58,11 +58,7 @@ function addBook () {
     noOfpages.value = "";
     refreshDomBookList();
     bookArray.forEach(postBook);
-    deleteButtons = Array.from(document.querySelectorAll(".delete-btn"));
-    deleteButtons.forEach(btn => btn.addEventListener("click", deleteBook));
-    statusBtns = Array.from(document.querySelectorAll(".status-btn"));
-    statusBtns.forEach(btn => btn.addEventListener("click", changeStatus));
-
+    setListeners();
 
 }
 
@@ -113,26 +109,22 @@ const refreshDomBookList = function() {
 };
 
 const deleteBook = function () {
-    const bookId = this.parentElement.dataset.id;
+    const bookId = this.parentElement.parentElement.dataset.id;
     bookArray.splice(bookArray.findIndex(obj => obj.id == bookId), 1);
+    console.log(bookId);
     refreshDomBookList();
     bookArray.forEach(postBook);
-    deleteButtons = Array.from(document.querySelectorAll(".delete-btn"));
-    deleteButtons.forEach(btn => btn.addEventListener("click", deleteBook));
-
+    setListeners();
 }
 
 const changeStatus = function () {
     console.log(this.parentElement.parentElement.dataset.id);
     const thisId = this.parentElement.parentElement.dataset.id;
     const obj = bookArray[bookArray.findIndex(obj => obj.id == thisId)]
-    console.log(obj);
     obj.changeReadStatus();
     refreshDomBookList();
     bookArray.forEach(postBook);
-    statusBtns = Array.from(document.querySelectorAll(".status-btn"));
-    statusBtns.forEach(btn => btn.addEventListener("click", changeStatus));
-
+    setListeners();
 }
 
 bookArray.forEach(postBook);
@@ -146,12 +138,23 @@ const test = function () {
 }
 
 
-let deleteButtons = Array.from(document.querySelectorAll(".delete-btn"));
+// let deleteButtons = Array.from(document.querySelectorAll(".delete-btn"));
+// deleteButtons.forEach(btn => btn.addEventListener("click", deleteBook ));
+
+// let statusBtns = Array.from(document.querySelectorAll(".status-btn"));
+// statusBtns.forEach(btn => btn.addEventListener("click", changeStatus));
+
+const setListeners = function () {
+
+deleteButtons = Array.from(document.querySelectorAll(".delete-btn"));
 deleteButtons.forEach(btn => btn.addEventListener("click", deleteBook ));
 
-let statusBtns = Array.from(document.querySelectorAll(".status-btn"));
+statusBtns = Array.from(document.querySelectorAll(".status-btn"));
 statusBtns.forEach(btn => btn.addEventListener("click", changeStatus));
 
+}
+
+setListeners();
 
 
 
