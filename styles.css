@@ -216,3 +216,16 @@ input[type=radio] {
     gap: 10px;
     align-items: center;
 }
+
+@media (max-width: 820px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    .header-img {
+        height: 100px;
+        width: 100%;
+    }
+    
+}
