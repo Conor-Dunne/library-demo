@@ -183,13 +183,13 @@ button {
     font-size: 1.5rem;
     height: 0;
     opacity: 0;
-    transition: opacity 2s ease;
+    transition: height 0.2s ease, opacity 3.5s ease;
     position: relative;
     right: 1000px;
 }
 
 .form-display {
-    height: auto;
+    height: 300px;
     width: auto;
     opacity: 1;
     right: 0px;
