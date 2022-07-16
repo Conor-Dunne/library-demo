@@ -74,8 +74,20 @@ Book.prototype.changeReadStatus = function () {
     bookArray.forEach(postBook);
 }
 
-function displayForm () {
-    document.querySelector(".add-book-form").style.display = "block"
+function displayForm() {
+    const form = document.querySelector(".add-book-form");
+    form.classList.toggle("form-display");
+    
+
+    // if (form.style.display == "none") {
+    //     document.querySelector(".add-book-form").style.display = "block";
+    //     document.querySelector(".fa-circle-plus").style.transform = "rotate(46deg)";
+    //     document.querySelector("#addBook-h1").textContent = "close";
+
+    // }
+
+
+    
 }
 
 
