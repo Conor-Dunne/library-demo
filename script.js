@@ -74,6 +74,10 @@ Book.prototype.changeReadStatus = function () {
     bookArray.forEach(postBook);
 }
 
+function displayForm () {
+    document.querySelector(".add-book-form").style.display = "block"
+}
+
 
 function addBook() {
     event.preventDefault();
@@ -174,6 +178,10 @@ const test = function () {
 
 // let statusBtns = Array.from(document.querySelectorAll(".status-btn"));
 // statusBtns.forEach(btn => btn.addEventListener("click", changeStatus));
+
+const addBookBtn = document.querySelector("#add-book");
+addBookBtn.addEventListener("click", displayForm);
+
 
 const setListeners = function () {
 
