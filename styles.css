@@ -93,8 +93,11 @@ header p {
 }
 
 .book {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-size: 0.8rem;
-    line-height: 2;
+    line-height: 1.5;
     padding: 20px 20px;
     color: #30302c;
     background-image: url(./images/book-cover.png);
@@ -106,7 +109,6 @@ header p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 30px;
     background-color: #e7e7e79e;
     width: 152px;
     position: relative;
@@ -183,9 +185,9 @@ button {
     font-size: 1.5rem;
     height: 0;
     opacity: 0;
-    transition: height 0.2s ease, opacity 3.5s ease;
+    transition: height 0.1s ease, opacity 3s ease;
     position: relative;
-    right: 1000px;
+    right: 10000px;
 }
 
 .form-display {
@@ -226,6 +228,10 @@ input[type=radio] {
     .header-img {
         height: 100px;
         width: 100%;
+    }
+
+    .main {
+        width: 80%;
     }
     
 }

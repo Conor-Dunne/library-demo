@@ -3,7 +3,7 @@ let bookArray = [
         title: "The Book",
         author: "Conor Dunne",
         pages: 150,
-        id: 345,
+        id: 34235,
         status: "read",
         changeReadStatus: function () {
             if (this.status === "read") {
@@ -19,7 +19,7 @@ let bookArray = [
         title: "The Stand",
         author: "Stephen King",
         pages: 1400,
-        id: 345,
+        id: 344565,
         status: "read",
         changeReadStatus: function () {
             if (this.status === "read") {
@@ -32,10 +32,10 @@ let bookArray = [
         }
     },
     {
-        title: "The Hobbit",
+        title: "The Lord of the Rings",
         author: "J.R.R. Tolkien",
         pages: 900,
-        id: 345,
+        id: 345685,
         status: "read",
         changeReadStatus: function () {
             if (this.status === "read") {
@@ -77,7 +77,7 @@ Book.prototype.changeReadStatus = function () {
 function displayForm() {
     const form = document.querySelector(".add-book-form");
     form.classList.toggle("form-display");
-    
+
 
     // if (form.style.display == "none") {
     //     document.querySelector(".add-book-form").style.display = "block";
