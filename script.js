@@ -1,11 +1,43 @@
 let bookArray = [
     {
-        title: "Book 0",
+        title: "The Book",
         author: "Conor Dunne",
         pages: 150,
         id: 345,
         status: "read",
-        changeReadStatus: function() {
+        changeReadStatus: function () {
+            if (this.status === "read") {
+                this.status = "unread"
+            } else if (this.status === "unread") {
+                this.status = "read"
+            };
+            refreshDomBookList();
+            bookArray.forEach(postBook);
+        }
+    },
+    {
+        title: "The Stand",
+        author: "Stephen King",
+        pages: 1400,
+        id: 345,
+        status: "read",
+        changeReadStatus: function () {
+            if (this.status === "read") {
+                this.status = "unread"
+            } else if (this.status === "unread") {
+                this.status = "read"
+            };
+            refreshDomBookList();
+            bookArray.forEach(postBook);
+        }
+    },
+    {
+        title: "The Hobbit",
+        author: "J.R.R. Tolkien",
+        pages: 900,
+        id: 345,
+        status: "read",
+        changeReadStatus: function () {
             if (this.status === "read") {
                 this.status = "unread"
             } else if (this.status === "unread") {
@@ -25,14 +57,14 @@ const addBookForm = document.querySelector(".add-book-form");
 
 
 
-function Book(title,author,pages,status) {
+function Book(title, author, pages, status) {
     this.title = title;
     this.author = author;
     this.pages = pages;
     this.status = status;
 }
 
-Book.prototype.changeReadStatus = function() {
+Book.prototype.changeReadStatus = function () {
     if (this.status === "read") {
         this.status = "unread"
     } else if (this.status === "unread") {
@@ -43,11 +75,11 @@ Book.prototype.changeReadStatus = function() {
 }
 
 
-function addBook () {
+function addBook() {
     event.preventDefault();
     const newBookTitle = document.querySelector("#book-title");
     const authorName = document.querySelector("#book-author");
-    const noOfpages = document.querySelector("#book-pages"); 
+    const noOfpages = document.querySelector("#book-pages");
     const statusCheck = document.querySelector("input[name=status]:checked");
     let newBook = new Book(newBookTitle.value, authorName.value, noOfpages.value, statusCheck.value);
     newBook.id = Math.random();
@@ -59,7 +91,6 @@ function addBook () {
     refreshDomBookList();
     bookArray.forEach(postBook);
     setListeners();
-
 }
 
 const postBook = function (obj) {
@@ -95,13 +126,13 @@ const postBook = function (obj) {
     deleteBtn.classList.add("delete-btn");
     deleteBtn.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
     bookItemsBox.appendChild(deleteBtn);
-    
+
     bookDiv.appendChild(bookItemsBox);
     bookDiv.dataset.id = obj.id;
     mainContent.appendChild(bookDiv);
 }
 
-const refreshDomBookList = function() {
+const refreshDomBookList = function () {
     const allBooks = document.querySelectorAll(".book");
     for (const el of allBooks) {
         el.remove();
@@ -146,11 +177,11 @@ const test = function () {
 
 const setListeners = function () {
 
-deleteButtons = Array.from(document.querySelectorAll(".delete-btn"));
-deleteButtons.forEach(btn => btn.addEventListener("click", deleteBook ));
+    deleteButtons = Array.from(document.querySelectorAll(".delete-btn"));
+    deleteButtons.forEach(btn => btn.addEventListener("click", deleteBook));
 
-statusBtns = Array.from(document.querySelectorAll(".status-btn"));
-statusBtns.forEach(btn => btn.addEventListener("click", changeStatus));
+    statusBtns = Array.from(document.querySelectorAll(".status-btn"));
+    statusBtns.forEach(btn => btn.addEventListener("click", changeStatus));
 
 }
 

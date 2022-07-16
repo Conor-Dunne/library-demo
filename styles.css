@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    font-family: Lato,sans-serif;
+    font-family: Lato, sans-serif;
     min-height: 100vh;
     background-color: white;
     background-size: cover;
@@ -44,7 +44,7 @@ header {
     padding: 10px;
     font-size: 1.5rem;
     line-height: 1.2;
-    background-color:white;
+    background-color: white;
     color: black;
     border-radius: 5px;
     border-left: 5px solid rgb(23, 217, 169);
@@ -63,7 +63,7 @@ header p {
 }
 
 .header-img {
-    background-image:url(./images/aleksei-ieshkin-A6obuTm7_z0-unsplash.jpg);
+    background-image: url(./images/aleksei-ieshkin-A6obuTm7_z0-unsplash.jpg);
     background-size: contain;
     width: 30%;
     border-radius: 2px;
@@ -71,17 +71,17 @@ header p {
 
 .main-content {
     min-height: 100%;
-   padding-top: 30px;
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-   justify-content: space-around;
-   align-items: stretch;
-   justify-items: center;
-   gap: 15px;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-content: space-around;
+    align-items: stretch;
+    justify-items: center;
+    gap: 15px;
 
 }
 
-.book, 
+.book,
 #add-book {
     padding: 8px 5px;
     background-color: white;
@@ -107,31 +107,38 @@ header p {
     justify-content: space-around;
     align-items: center;
     margin-top: 30px;
+    background-color: #e7e7e79e;
+    width: 152px;
+    position: relative;
+    left: -20px;
+    bottom: -15px;
 }
 
 .book h2 {
     font-weight: 200;
 }
 
-/* .book:nth-child(4n-1) {
+.book:nth-child(4n-1) {
     background-color: var(--accent-wine);
+
 }
 
 .book:nth-child(4n) {
     background-color: var(--pale-green);
-    color: #f0f32b;
+    color: #dde02fe3;
 
 }
 
 .book:nth-child(4n+1) {
     background-color: var(--old-blue);
+    color: var(--old-yellow);
 }
 
 .book:nth-child(4n+2) {
     background-color: var(--old-yellow);
     color: #20201e;
 
-} */
+}
 
 #add-book {
     display: flex;
@@ -143,7 +150,8 @@ header p {
 }
 
 button {
-    margin: 10px 0;;
+    margin: 10px 0;
+    ;
 }
 
 .delete-btn,
@@ -164,8 +172,9 @@ button {
 .status-p {
     font-size: 1.5rem;
     font-weight: bold;
+    margin: 0;
     color: var(--accent-wine);
-   
+
 }
 
 form {
@@ -194,7 +203,3 @@ input[type=radio] {
     gap: 10px;
     align-items: center;
 }
-
-
-
-
