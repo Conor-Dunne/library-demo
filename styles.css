@@ -92,6 +92,15 @@ header p {
     border-radius: 3px;
 }
 
+
+
+.fa-circle-rotate {
+
+    transform: rotate(46deg);
+}
+
+
+
 .book {
     display: flex;
     flex-direction: column;
@@ -100,7 +109,7 @@ header p {
     line-height: 1.5;
     padding: 20px 20px;
     color: #30302c;
-    background-image: url(./images/book-cover.png);
+    background-image: url(./images/book-cover.jpg);
     background-size: cover;
     background-blend-mode: multiply;
 }
@@ -151,10 +160,10 @@ header p {
     color: rgb(232 75 75);
 }
 
-button {
-    margin: 10px 0;
-    ;
+.hide {
+    display: none !important;
 }
+
 
 .delete-btn,
 .status-btn {
@@ -200,16 +209,40 @@ button {
 
 input {
     display: block;
+    margin: 5px 0;
     font-size: 2rem;
     max-width: 100%;
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 2px;
 }
 
 input[type=radio] {
     border: none;
 }
 
+input:focus-visible {
+    outline: none;
+    border: 1px solid black;
+}
+
 .read-status-fieldset {
     border: none;
+}
+
+#add-book-btn {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    border-radius: 3px;
+    border: none;
+    color: aliceblue;
+    background-color: rgb(67, 114, 214);
+}
+
+#add-book-btn:hover {
+    background-color: rgb(67, 77, 214) ;
+    cursor: pointer;
 }
 
 .radio-label {

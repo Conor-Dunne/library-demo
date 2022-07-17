@@ -75,20 +75,11 @@ Book.prototype.changeReadStatus = function () {
 }
 
 function displayForm() {
-    const form = document.querySelector(".add-book-form");
-    form.classList.toggle("form-display");
-
-
-    // if (form.style.display == "none") {
-    //     document.querySelector(".add-book-form").style.display = "block";
-    //     document.querySelector(".fa-circle-plus").style.transform = "rotate(46deg)";
-    //     document.querySelector("#addBook-h1").textContent = "close";
-
-    // }
-
-
-    
+    document.querySelector(".add-book-form").classList.toggle("form-display");
+    document.querySelector(".fa-circle-plus").classList.toggle("fa-circle-rotate");
+    document.querySelector("#addBook-h1").classList.toggle("hide");
 }
+
 
 
 function addBook() {

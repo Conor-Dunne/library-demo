@@ -26,7 +26,6 @@
             <input type="text" id="book-author" name="author" required>
             <label for="book-pages">No. of pages:</label>
             <input type="tel" name="page" id="book-pages" required>
-            <button id="add-book-btn" method="get">Add book</button>
             <fieldset class="read-status-fieldset">
                 <legend>Have you read this book?</legend>
                 <label for="read" class="radio-label">
@@ -36,11 +35,12 @@
                     <input type="radio" name="status" id="unread" value="unread">I have not read this book
                 </label>
             </fieldset>
+            <button id="add-book-btn" method="get">Add book</button>
         </form>
         <div class="main-content">
             <div id="add-book">
                 <i class="fa-solid fa-circle-plus fa-5x"></i>
-                <h1 id="addBook-h1">Add book</h1>
+                <h1 id="addBook-h1" class="unhide">Add book</h1>
             </div>
         </div>
     </div>
