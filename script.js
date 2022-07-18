@@ -176,12 +176,6 @@ const test = function () {
 }
 
 
-// let deleteButtons = Array.from(document.querySelectorAll(".delete-btn"));
-// deleteButtons.forEach(btn => btn.addEventListener("click", deleteBook ));
-
-// let statusBtns = Array.from(document.querySelectorAll(".status-btn"));
-// statusBtns.forEach(btn => btn.addEventListener("click", changeStatus));
-
 const addBookBtn = document.querySelector("#add-book");
 addBookBtn.addEventListener("click", displayForm);
 
